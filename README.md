@@ -65,10 +65,30 @@ Follow these steps to run **BookNest** locally:
    http://localhost/BookNest
    ```
 ---
+Here's your updated `README.md` with a **📸 Screenshots** section added just before the **Contact📩** section:
+
+---
+
+## 📸 Screenshots
+
+Take a peek at the BookNest interface:
+
+| Home Page | Login Page | Product View |
+|-----------|------------|---------------|
+| ![](Assets/screenshots/index.png) | ![](Assets/screenshots/login.png) | ![](Assets/screenshots/viewProduct.png) |
+
+| Add Product (Admin) | Cart | Orders (Admin) |
+|---------------------|------|----------------|
+| ![](Assets/screenshots/addProduct.png) | ![](Assets/screenshots/cart.png) | ![](Assets/screenshots/orders.png) |
+
+---
+
+Let me know if you'd like to add image captions, adjust layout, or optimize it for GitHub rendering!
+---
 ## Contact📩
 For any queries or support, feel free to reach out:
 - **👤 Name**: Abhishek Soni
 - **📧 Email**: abhisheksoni6904@gmail.com
 - **🔗 GitHub**: [Abhishek-soni6904](https://github.com/Abhishek-soni6904)
-- **📸 Instagram**: [_abhishek._.soni_](https://www.instagram.com/_abhishek._.soni_/)
+- **📸 Instagram**: [\_abhishek.\_\.soni\_](https://www.instagram.com/_abhishek._.soni_/)
 - **💼 LinkedIn**: [Abhishek Soni](https://www.linkedin.com/in/abhishek-soni-662028331/)
