@@ -73,7 +73,7 @@ Take a peek at the BookNest interface:
 |-----------|------------|---------------|
 | ![](Assets/screenshots/index.png) | ![](Assets/screenshots/login.png) | ![](Assets/screenshots/viewProduct.png) |
 
-| Add Product (Admin) | Cart | Orders (Admin) |
+| Add Product (Admin) | Cart | Orders |
 |---------------------|------|----------------|
 | ![](Assets/screenshots/addProduct.png) | ![](Assets/screenshots/cart.png) | ![](Assets/screenshots/orders.png) |
 
