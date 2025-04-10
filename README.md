@@ -65,10 +65,6 @@ Follow these steps to run **BookNest** locally:
    http://localhost/BookNest
    ```
 ---
-Here's your updated `README.md` with a **📸 Screenshots** section added just before the **Contact📩** section:
-
----
-
 ## 📸 Screenshots
 
 Take a peek at the BookNest interface:
@@ -81,9 +77,6 @@ Take a peek at the BookNest interface:
 |---------------------|------|----------------|
 | ![](Assets/screenshots/addProduct.png) | ![](Assets/screenshots/cart.png) | ![](Assets/screenshots/orders.png) |
 
----
-
-Let me know if you'd like to add image captions, adjust layout, or optimize it for GitHub rendering!
 ---
 ## Contact📩
 For any queries or support, feel free to reach out:
