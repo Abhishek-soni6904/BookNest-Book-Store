@@ -70,5 +70,5 @@ For any queries or support, feel free to reach out:
 - **👤 Name**: Abhishek Soni
 - **📧 Email**: abhisheksoni6904@gmail.com
 - **🔗 GitHub**: [Abhishek-soni6904](https://github.com/Abhishek-soni6904)
-- **📸 Instagram**: [_abhishek._.soni_](https://www.instagram.com/_abhishek._.soni_/)
+- **📸 Instagram**: [\_abhishek.\_\.soni\_](https://www.instagram.com/_abhishek._.soni_/)
 - **💼 LinkedIn**: [Abhishek Soni](https://www.linkedin.com/in/abhishek-soni-662028331/)
