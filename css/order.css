@@ -1,0 +1,166 @@
+.orders-container {
+    max-width: 1280px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.order-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    border: 1px solid var(--gray-200);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.order-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.order-header {
+    background-color: var(--gray-100);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.order-details {
+    padding: 1.5rem;
+}
+
+.product-list {
+    margin: 1rem 0;
+    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: 1rem;
+}
+
+.status-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.status-Pending {
+    background-color: var(--warning);
+    color: #fff;
+}
+
+.status-Processing {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+.status-Delivered {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.status-Cancelled {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cancel-btn {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.cancel-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.update-btn {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+.update-btn:hover {
+    opacity: 0.9;
+}
+
+select {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--gray-300);
+}
+
+.print-btn {
+    background-color: #4a5568;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.print-btn:hover {
+    background-color: #2d3748;
+}
+
+@media print {
+
+    /* Hide unnecessary elements */
+    .navbar,
+    #footer,
+    .action-buttons,
+    .orders-container>h1 {
+        display: none !important;
+    }
+
+    /* Show only the selected order */
+    .orders-container {
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .order-card {
+        page-break-inside: avoid;
+        border: none !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+    }
+
+    /* Ensure text is visible */
+    .order-header,
+    .order-details,
+    .shipping-info,
+    .product-list,
+    .product-item {
+        display: block !important;
+        color: black !important;
+        background: white !important;
+    }
+
+    /* Maintain status badge colors */
+    .status-badge {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    /* Add a border for better separation */
+    .shipping-info,
+    .product-list {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+}

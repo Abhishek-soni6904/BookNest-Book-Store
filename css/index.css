@@ -1,0 +1,355 @@
+/* Reset and Base Styles */
+:root {
+  --primary: #FF6B6B;
+  --primary-dark: #EE5253;
+  --secondary: #4ECDC4;
+  --warning: #FFB900;
+  --gray-50: #FAFAFA;
+  --gray-100: #F5F5F5;
+  --gray-200: #EEEEEE;
+  --gray-300: #E0E0E0;
+  --gray-400: #BDBDBD;
+  --gray-500: #9E9E9E;
+  --gray-600: #757575;
+  --gray-700: #616161;
+  --gray-800: #424242;
+  --gray-900: #212121;
+}
+
+/* Rest of the CSS remains the same, but uses the new color variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) transparent;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.5;
+  color: var(--gray-800);
+}
+
+/* Hero Section */
+.hero {
+  background: url('../Assets/hero.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 4rem 1rem;
+  height: 60vh;
+}
+
+.hero-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #00000061;
+  padding: 1rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.primary-btn, .secondary-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: #fff;
+  color: var(--primary);
+  border: none;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.secondary-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+/* Categories Section */
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.categories {
+  padding: 4rem 1rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--gray-900);
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.category-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 0.3s;
+  border: 1px solid var(--gray-200);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary);
+}
+
+.category-card h3 {
+  font-size: 1.25rem;
+  color: var(--gray-800);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.category-card p {
+  color: var(--gray-500);
+  font-size: 0.875rem;
+}
+
+.category-icon {
+  width: 3rem;
+  font-size: 1.5rem;
+  margin: 0 auto 1rem;
+  color: var(--primary);
+}
+
+/* Authors Section */
+.authors-section {
+  padding: 2rem 0;
+  overflow: hidden;
+  background-color: var(--gray-200);
+}
+
+.authors-wrapper {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.authors-scroll {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  animation: scroll 50s linear infinite;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.author-card {
+  background: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--gray-200);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.author-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary);
+}
+
+.author-card h3 {
+  margin: 0;
+  color: var(--gray-700);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Product Cards */
+.featured-products {
+  padding: 4rem 0.5rem;
+}
+
+.product-slider {
+  display: flex;
+  align-items: stretch;
+}
+
+#controls > div {
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 200px;
+  color: #fff;
+}
+
+.prev {
+  float: left;
+}
+
+.next {
+  float: right;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.3s;
+  border: 1px solid var(--gray-200);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: 1.5rem;
+}
+
+.product-category {
+  color: var(--gray-500);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.current-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.view-product {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-to-cart:hover {
+  background-color: var(--primary-dark);
+}
+
+.add-to-cart.added {
+  background-color: var(--secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .authors-scroll {
+    animation-duration: 30s;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
